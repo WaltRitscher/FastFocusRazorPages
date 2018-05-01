@@ -1,7 +1,7 @@
 ﻿@page "{id:int?}"
 @model FastFocusApp.Pages.DatabindWithRouteParamModel
 @{
-    ViewData["Title"] = "DatabindWithRouteParam";
+	ViewData["Title"] = "DatabindWithRouteParam";
 }
 
 <div class="container">
@@ -24,7 +24,8 @@
 	</div>
 	<div class="row justify-content-center">
 		<div class="col-8 col-sm-12 col-lg-10">
-			<a class="btn btn-primary" asp-page="EditTourStop">Edit this tour stop.</a>
+			<a class="btn btn-primary" asp-page="EditTourStop" 
+				 asp-route-id='@RouteData.Values["id"]'>Edit this tour stop.</a>
 		</div>
 	</div>
 </div>
