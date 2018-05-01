@@ -59,7 +59,7 @@ namespace TailorMadeTours.Models {
 				Latitude = "41.880606",
 				Longitude = "-87.625324",
 				Phone = "555-2661",
-				Description = "On a good day, Chef Mandro Zekki spins a fantastic lunch scene in her signature café. On a great day you'll swoon over the impeccable lunch entries. Try the Sea Dragon Salad or the Scarlet Blossom Penne"				,
+				Description = "On a good day, Chef Mandro Zekki spins a fantastic lunch scene in her signature café. On a great day you'll swoon over the impeccable lunch entries. Try the Sea Dragon Salad or the Scarlet Blossom Penne."				,
 				ImageUri = "~/Images/Tours/Stops/Lunch.jpg",
 				Selected = true,
 				EstimatedMinutes = 30,
