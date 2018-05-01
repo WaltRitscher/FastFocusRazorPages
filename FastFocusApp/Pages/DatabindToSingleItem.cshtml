@@ -1,0 +1,31 @@
+﻿@page 
+@model FastFocusApp.Pages.DatabindToSingleItemModel
+@{
+	ViewData["Title"] = "Databind To SingleItem";
+}
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-8 col-sm-12 col-lg-10">
+			<div class="h2">
+				<p>@Model.CurrentTourStop.Name</p>
+			</div>
+		</div>
+		<div class="col-8 col-sm-12 col-lg-10">
+			<div class="h2">
+				<img class="img-circle img-thumbnail" src="@Url.Content(Model.CurrentTourStop.ImageUri)" />
+			</div>
+		</div>
+		<div class="col-8 col-sm-12 col-lg-10">
+			<div class="h5 text-muted">
+				<p>@Model.CurrentTourStop.Description</p>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-8 col-sm-12 col-lg-10">
+			<a class="btn btn-primary" asp-page="EditSingleItem">Edit this tour stop.</a>
+		</div>
+	</div>
+</div>
+
+
