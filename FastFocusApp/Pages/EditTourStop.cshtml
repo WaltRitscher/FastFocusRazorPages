@@ -1,39 +1,39 @@
 ﻿@page "{id:int?}"
 @model FastFocusApp.Pages.EditTourStopModel
 @{
-    ViewData["Title"] = "EditTourStop";
+	ViewData["Title"] = "EditTourStop";
 }
 
 
-		<form method="post">
-			<div asp-validation-summary="All" class="danger"></div>
-			<div class="form-group">
-				<label asp-for="@Model.CurrentTourStop.StopNumber" class="label" ></label>
-				<input asp-for="CurrentTourStop.StopNumber" class="form-control" />
-				<span asp-validation-for="CurrentTourStop.StopNumber" class="text-danger" />
-			</div>
-			<div >
-				<label asp-for="CurrentTourStop.Name" ></label>
-				<input asp-for="CurrentTourStop.Name" class="form-control" />
-				<span asp-validation-for="CurrentTourStop.Name" class="text-danger" />
+<form method="post">
+	<div asp-validation-summary="All" class="danger"></div>
+	<div class="form-group">
+		<label asp-for="@Model.CurrentTourStop.StopNumber" class="label"></label>
+		<input asp-for="CurrentTourStop.StopNumber" class="form-control" />
+		<span asp-validation-for="CurrentTourStop.StopNumber" class="text-danger" />
+	</div>
+	<div>
+		<label asp-for="CurrentTourStop.Name"></label>
+		<input asp-for="CurrentTourStop.Name" class="form-control" />
+		<span asp-validation-for="CurrentTourStop.Name" class="text-danger" />
+	</div>
+	<div>
+		<label asp-for="CurrentTourStop.Description"></label>
+		<input asp-for="CurrentTourStop.Description" class="form-control" />
+		<span asp-validation-for="CurrentTourStop.Description" class="text-danger" />
+	</div>
 
-				<div >
-					<label asp-for="CurrentTourStop.Description" ></label>
-					<input asp-for="CurrentTourStop.Description" class="form-control" />
-					<span asp-validation-for="CurrentTourStop.Description" class="text-danger" />
-				</div>
+	<div>
+		<label asp-for="CurrentTourStop.EstimatedMinutes"></label>
+		<input asp-for="CurrentTourStop.EstimatedMinutes" class="form-control" />
 
-				<div >
-					<label asp-for="CurrentTourStop.EstimatedMinutes" ></label>
-					<input asp-for="CurrentTourStop.EstimatedMinutes" class="form-control" />
-					<span asp-validation-for="CurrentTourStop.EstimatedMinutes" class="text-danger" />
-				</div>
-				<div >
-					<label asp-for="CurrentTourStop.Phone" ></label>
-					<input asp-for="CurrentTourStop.Phone" class="form-control" />
-					<span asp-validation-for="CurrentTourStop.Phone" class="text-danger" />
-				</div>
-			</div>
-
-		</form>
+	</div>
+	<div>
+		<label asp-for="CurrentTourStop.Phone"></label>
+		<input asp-for="CurrentTourStop.Phone" class="form-control" />
+		<span asp-validation-for="CurrentTourStop.Phone" class="text-danger" />
+	</div>
+	
+	<button class="btn btn-primary" type="submit">Update.</button>
+</form>
 

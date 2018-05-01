@@ -3,7 +3,13 @@
 @{
 	ViewData["Title"] = "DatabindWithRouteParam";
 }
-
+@if (Model.ShouldShowMessage)
+{
+	<div class="alert alert-info alert-dismissable" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
+		@Model.Message
+	</div>
+}
 <div class="container">
 	<div class="row justify-content-center">
 		<div class="col-8 col-sm-12 col-lg-10">

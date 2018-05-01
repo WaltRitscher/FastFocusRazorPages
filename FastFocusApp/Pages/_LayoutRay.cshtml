@@ -7,12 +7,17 @@
 	<script defer src="~/lib/fontawesome-all.min.js"></script>
 
 	<environment include="Development">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="~/css/bootstrap.min.css">
 		<link rel="stylesheet" href="~/css/animate.css">
 		<link rel="stylesheet" href="~/css/site.css" />
 		<!-- CSS and other web assets from Ray Villalobos LinkedIn Learning courses.
-				 Travel classes from Walt Ritscher WPF courses.-->
-
+			 Travel classes from Walt Ritscher WPF courses.-->
+		<!-- ALL OF YOUR SITE CODE HERE -->
+		<script src="~/js/lib/jquery.min.js></script>
+		<script src="~/js/lib/popper.min.js"></script>
+		<script src="~/js/lib/bootstrap.min.js"></script>
+		<!-- ADDITIONAL JS HERE -->
+		<script src="~/js/script.js"></script>
 	</environment>
 	<environment exclude="Development">
 		<link rel="stylesheet" href="~/css/bootstrap.min.css">
@@ -31,9 +36,9 @@
 				<a class="navbar-brand text-lowercase font-weight-light" href="#layout-hero"><i class="fas fa-cube mr-2"></i> Fast Focus - Razor Pages</a>
 				<div class="collapse navbar-collapse" id="myTogglerNav">
 					<div class="navbar-nav ml-auto font-weight-regular text-uppercase">
-						<a class="nav-item nav-link" href="#layout-hero">home</a>
-						<a class="nav-item nav-link" href="#layout-multicolumn">one</a>
-						<a class="nav-item nav-link" href="#layout-media">two</a>
+						<a class="nav-item nav-link" href="/">home</a>
+						<a class="nav-item nav-link" asp-page="DatabindToSingleItem">one</a>
+						<a class="nav-item nav-link" asp-page="DatabindWithRouteParam" >two</a>
 						<a class="nav-item nav-link" href="#layout-carousel">three</a>
 						<a class="nav-item nav-link" href="#layout-nested">four</a>
 
@@ -47,7 +52,7 @@
 					<div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
 						<h3 class="font-weight-normal">---</h3>
 						<p class="family-serif lead pt-2 font-weight-light">Twenty minute guide to Razor Pages.</p>
-						<a class="btn btn-outline-light" href="https://github.com/waltritscher/">Github Repo</a>
+						<a class="btn btn-outline-light" href="https://github.com/waltritscher/fastfocusrazorpages">Github Repo</a>
 					</div><!-- col -->
 				</div><!-- row -->
 			</div><!-- container -->
@@ -77,6 +82,7 @@
 				</div><!-- col -->
 			</div><!-- row -->
 		</div> <!-- container -->
+		</article>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-8 col-sm-12 col-lg-10">
@@ -90,18 +96,13 @@
 				<a class="text-white px-2" href="https://twitter.com/waltritscher"><i class="fab fa-twitter"></i></a>
 
 				<a class="text-white px-2" href="https://linkedin.com/in/waltritscher"><i class="fab fa-linkedin"></i></a>
-				<a class="text-white px-2" href="https://github.com/waltritscher"><i class="fab fa-github"></i></a>
+				<a class="text-white px-2" href="https://github.com/waltritscher/"><i class="fab fa-github"></i></a>
 
 
 
 
 			</div>
 		</footer>
-		<!-- ALL OF YOUR SITE CODE HERE -->
-		<script src="js/lib/jquery.min.js"></script>
-		<script src="js/lib/popper.min.js"></script>
-		<script src="js/lib/bootstrap.min.js"></script>
-		<!-- ADDITIONAL JS HERE -->
-		<script src="js/script.js"></script>
+
 </body>
 </html>
