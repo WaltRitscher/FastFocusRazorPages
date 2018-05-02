@@ -12,7 +12,7 @@ namespace FastFocusApp.Pages
   public class DatabindToSingleItemModel : PageModel
   {
     private ApiContext _db
-    public DatabindToSingleItemModel(ApiContext db)
+    public DatabindToSingleItemModel()
     {
       // ApiContext db
       // _db= db;
