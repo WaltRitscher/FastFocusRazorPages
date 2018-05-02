@@ -11,9 +11,11 @@ namespace FastFocusApp.Pages
 {
   public class DatabindToSingleItemModel : PageModel
   {
-    public DatabindToSingleItemModel()
+    private ApiContext _db
+    public DatabindToSingleItemModel(ApiContext db)
     {
       // ApiContext db
+      // _db= db;
       // use this to setup dependency injection
     }
     public void OnGet()
