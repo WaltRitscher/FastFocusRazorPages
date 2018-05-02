@@ -22,11 +22,11 @@ namespace FastFocusApp.Pages
       if (!ModelState.IsValid)
       {
         return Page();
-
+        
       }
       // how do we pass data (message) back to the orginal page?
       // use a property on the page model
-      Message = $"Tour Stop {CurrentTourStop.Name} was updated!";
+      Message = $"Tour Stop: '{CurrentTourStop.Name}' was updated!";
       // Response.Redirect("./Index");
      return RedirectToPage("DatabindWithRouteParam");
       // similar to RedirectToAction and RedirectToRoute
