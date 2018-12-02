@@ -5,10 +5,10 @@
 }
 
 
-<form method="post">
+<form method="post" class="col-6" >
 	<div asp-validation-summary="All" class="danger"></div>
 	<div class="form-group">
-		<label asp-for="@Model.CurrentTourStop.StopNumber" class="label"></label>
+		<label asp-for="@Model.CurrentTourStop.StopNumber" class="label "></label>
 		<input asp-for="CurrentTourStop.StopNumber" class="form-control" />
 		<span asp-validation-for="CurrentTourStop.StopNumber" class="text-danger" />
 	</div>
@@ -18,22 +18,23 @@
 		<span asp-validation-for="CurrentTourStop.Name" class="text-danger" />
 	</div>
 	<div>
-		<label asp-for="CurrentTourStop.Description"></label>
-		<input asp-for="CurrentTourStop.Description" class="form-control" />
+		<label asp-for="CurrentTourStop.Description" class="pt-4"></label>
+		<textarea asp-for="CurrentTourStop.Description" class="form-control" ></textarea>
 		<span asp-validation-for="CurrentTourStop.Description" class="text-danger" />
 	</div>
 
 	<div>
-		<label asp-for="CurrentTourStop.EstimatedMinutes"></label>
+		<label asp-for="CurrentTourStop.EstimatedMinutes" class="pt-4"></label>
 		<input asp-for="CurrentTourStop.EstimatedMinutes" class="form-control" />
 
 	</div>
 	<div>
-		<label asp-for="CurrentTourStop.Phone"></label>
+		<label asp-for="CurrentTourStop.Phone" class="pt-4"></label>
 		<input asp-for="CurrentTourStop.Phone" class="form-control" />
 		<span asp-validation-for="CurrentTourStop.Phone" class="text-danger" />
 	</div>
 	
-	<button class="btn btn-primary" type="submit">Update.</button>
+		<button class="btn btn-primary mt-3" type="submit">Update</button>
+	
 </form>
 
