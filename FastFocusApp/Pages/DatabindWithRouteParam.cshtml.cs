@@ -16,10 +16,13 @@ namespace FastFocusApp.Pages
 
     }
 
-    // use TempData property to pass data between pages
+    // use TempData attribute to pass data between pages
     // Properties marked with TempData
-    // attribute with are stored in encrypted cookie
+    // attribute  are stored in encrypted cookie
     // When the data is read from the cookie, it is deleted.
+
+     // in this example the Message property is 
+     // defined in two pages, so it can be shared.
     [TempData]
     public string Message { get; set; }
 

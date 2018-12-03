@@ -36,6 +36,9 @@ namespace FastFocusApp.Pages
     // available in controllers and razor pages
     // Properties marked with TempData attribute are stored in encrypted cookie
     // When the data is read from the cookie, it is deleted.
+
+    // in this example the Message property is 
+    // defined in two pages, so it can be shared.
     [TempData]
     public string Message { get; set; }
 
