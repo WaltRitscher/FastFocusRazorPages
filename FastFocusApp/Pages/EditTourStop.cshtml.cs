@@ -32,9 +32,9 @@ namespace FastFocusApp.Pages
       // similar to RedirectToAction and RedirectToRoute
     }
 
-    // use TempData property to pass data between pages
-    // Properties marked with TempData
-    // attribute with are stored in encrypted cookie
+    // use TempData attribute to pass data between pages
+    // available in controllers and razor pages
+    // Properties marked with TempData attribute are stored in encrypted cookie
     // When the data is read from the cookie, it is deleted.
     [TempData]
     public string Message { get; set; }
